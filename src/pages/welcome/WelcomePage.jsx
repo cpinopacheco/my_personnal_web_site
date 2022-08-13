@@ -8,12 +8,12 @@ const WelcomePage = () => {
     <motion.div
       className={styles.container}
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1, ease: "easeOut", transition: { duration: 3 } }}
+      animate={{ opacity: 1, ease: "easeOut", transition: { duration: 0.8 } }}
       exit={{
         opacity: 0,
         x: "-100%",
         ease: "easeOut",
-        transition: { duration: 1 },
+        transition: { duration: 2 },
       }}
     >
       <div>

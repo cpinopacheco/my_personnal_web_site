@@ -1,8 +1,6 @@
 .container {
   align-items: center;
   background-color: #111;
-  /*   background: radial-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(../../assets/images/img_welcome.jpg); */
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -26,6 +24,7 @@
 .welcome_text {
   color: var(--secondary-color);
   text-align: center;
+  text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
@@ -36,18 +35,18 @@
 
 @media (min-width: 992px) {
   .welcome_text {
-    max-width: 50%;
     font-size: 1.2rem;
+    max-width: 50%;
   }
 }
 
 .box {
-  width: 100px;
-  height: 100px;
   background: #000;
+  height: 100px;
+  width: 100px;
 }
 
 .phrase {
-  text-align: center;
   color: var(--secondary-color);
+  text-align: center;
 }

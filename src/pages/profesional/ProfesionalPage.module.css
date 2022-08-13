@@ -2,15 +2,15 @@
   margin: 0 auto;
 }
 
-.title {
-  font-size: 3rem;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 1.5rem 0;
-}
-
 @media (min-width: 1200px) {
   .container {
     width: 80%;
   }
+}
+
+.title {
+  font-size: 3rem;
+  margin: 1.5rem 0;
+  text-align: center;
+  text-transform: uppercase;
 }

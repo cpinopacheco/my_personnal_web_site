@@ -3,88 +3,86 @@
 }
 
 .tilt_box_wrap {
-  /* width: 280px; */
   height: 280px;
+  perspective: 1000px;
   position: relative;
   transition: all 0.6s ease-out;
-  perspective: 1000px;
-  /* margin: 2rem 0; */
 }
 
 @media (min-width: 992px) {
   .tilt_box_wrap:hover {
+    cursor: pointer;
     transition: all 0.3s linear;
     transform: scale(1.1);
-    cursor: pointer;
   }
 }
 
 .tilt_box {
-  width: 100%;
-  height: 100%;
+  align-items: center;
   background: #04527b;
   border-radius: var(--border-radius);
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   color: #fff;
+  display: flex;
   font-size: 50px;
-  text-transform: uppercase;
+  height: 100%;
+  justify-content: center;
+  perspective: 1000px;
+  position: relative;
   transition: all 0.3s ease-out;
   transform: rotateX(0deg) rotateY(0deg);
-  perspective: 1000px;
   transform-style: preserve-3d;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
 }
 
 .tilt_box strong {
-  transform: translateZ(60px);
   text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+  transform: translateZ(60px);
 }
 
 .t_over {
-  width: 33.333%;
   height: 33.333%;
   position: absolute;
+  width: 33.333%;
   z-index: 1;
 }
 
 .t_over:nth-child(1) {
-  top: 0;
   left: 0;
+  top: 0;
 }
 .t_over:nth-child(2) {
-  top: 0;
   left: 33.333%;
+  top: 0;
 }
 .t_over:nth-child(3) {
-  top: 0;
   left: 66.666%;
+  top: 0;
 }
 .t_over:nth-child(4) {
-  top: 33.333%;
   left: 0;
+  top: 33.333%;
 }
 .t_over:nth-child(5) {
-  top: 33.333%;
   left: 33.333%;
+  top: 33.333%;
 }
 .t_over:nth-child(6) {
-  top: 33.333%;
   left: 66.666%;
+  top: 33.333%;
 }
 .t_over:nth-child(7) {
-  top: 66.666%;
   left: 0;
+  top: 66.666%;
 }
 .t_over:nth-child(8) {
-  top: 66.666%;
   left: 33.333%;
+  top: 66.666%;
 }
 .t_over:nth-child(9) {
-  top: 66.666%;
   left: 66.666%;
+  top: 66.666%;
 }
 
 @media (min-width: 992px) {

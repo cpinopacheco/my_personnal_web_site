@@ -8,8 +8,8 @@
 
 @media (min-width: 576px) {
   .container {
-    padding: 2rem;
     margin: 2rem 1rem;
+    padding: 2rem;
   }
 }
 
@@ -21,8 +21,8 @@
 @media (min-width: 1200px) {
   .flex {
     display: flex;
-    justify-content: center;
     gap: 40px;
+    justify-content: center;
   }
 
   .flex:nth-child(even) {
@@ -36,21 +36,21 @@
 
 .image {
   border-radius: var(--border-radius);
-  width: 100%;
   height: auto;
   margin-top: 2rem;
+  width: 100%;
 }
 
 @media (min-width: 1200px) {
   .image {
-    width: 50%;
     margin-top: 0;
+    width: 50%;
   }
 }
 
 @media (min-width: 1200px) {
   .image {
-    width: 40%;
     margin-top: 0;
+    width: 40%;
   }
 }
