@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.music_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: none;
+  padding: 0.5rem;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.music_button:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 1rem var(--secondary-color);
+}
+
+.textEffect {
+  margin-left: 2rem;
+}
+
+@media (max-width: 576px) {
+  .music_button {
+    flex-wrap: wrap;
+  }
+}

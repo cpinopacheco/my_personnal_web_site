@@ -1,0 +1,118 @@
+.container {
+  width: 100%;
+}
+
+.tilt_box_wrap {
+  /* width: 280px; */
+  height: 280px;
+  position: relative;
+  transition: all 0.6s ease-out;
+  perspective: 1000px;
+  /* margin: 2rem 0; */
+}
+
+@media (min-width: 992px) {
+  .tilt_box_wrap:hover {
+    transition: all 0.3s linear;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}
+
+.tilt_box {
+  width: 100%;
+  height: 100%;
+  background: #04527b;
+  border-radius: var(--border-radius);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-out;
+  transform: rotateX(0deg) rotateY(0deg);
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.tilt_box strong {
+  transform: translateZ(60px);
+  text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.t_over {
+  width: 33.333%;
+  height: 33.333%;
+  position: absolute;
+  z-index: 1;
+}
+
+.t_over:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+.t_over:nth-child(2) {
+  top: 0;
+  left: 33.333%;
+}
+.t_over:nth-child(3) {
+  top: 0;
+  left: 66.666%;
+}
+.t_over:nth-child(4) {
+  top: 33.333%;
+  left: 0;
+}
+.t_over:nth-child(5) {
+  top: 33.333%;
+  left: 33.333%;
+}
+.t_over:nth-child(6) {
+  top: 33.333%;
+  left: 66.666%;
+}
+.t_over:nth-child(7) {
+  top: 66.666%;
+  left: 0;
+}
+.t_over:nth-child(8) {
+  top: 66.666%;
+  left: 33.333%;
+}
+.t_over:nth-child(9) {
+  top: 66.666%;
+  left: 66.666%;
+}
+
+@media (min-width: 992px) {
+  .t_over:nth-child(1):hover ~ .tilt_box {
+    transform: rotateX(-20deg) rotateY(20deg);
+  }
+  .t_over:nth-child(2):hover ~ .tilt_box {
+    transform: rotateX(-20deg) rotateY(0deg);
+  }
+  .t_over:nth-child(3):hover ~ .tilt_box {
+    transform: rotateX(-20deg) rotateY(-20deg);
+  }
+  .t_over:nth-child(4):hover ~ .tilt_box {
+    transform: rotateX(0deg) rotateY(20deg);
+  }
+  .t_over:nth-child(5):hover ~ .tilt_box {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  .t_over:nth-child(6):hover ~ .tilt_box {
+    transform: rotateX(0deg) rotateY(-20deg);
+  }
+  .t_over:nth-child(7):hover ~ .tilt_box {
+    transform: rotateX(20deg) rotateY(20deg);
+  }
+  .t_over:nth-child(8):hover ~ .tilt_box {
+    transform: rotateX(20deg) rotateY(0deg);
+  }
+  .t_over:nth-child(9):hover ~ .tilt_box {
+    transform: rotateX(20deg) rotateY(-20deg);
+  }
+}

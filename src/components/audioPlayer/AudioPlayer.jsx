@@ -1,0 +1,97 @@
+import playButton from "../../assets/images/play.svg";
+import stopButton from "../../assets/images/stop.svg";
+import pauseButton from "../../assets/images/pause.svg";
+import styles from "./AudioPlayer.module.css";
+import bgAudio from "../../assets/audio/daddy-yankee-ft-arcangel-pasion.mp3";
+import useApp from "../../hooks/useApp";
+import { AnimatePresence, motion } from "framer-motion";
+import WaveSound from "../waveSound/WaveSound";
+import { useEffect } from "react";
+import Typewriter from "typewriter-effect";
+
+const audio = new Audio(bgAudio);
+
+const AudioPlayer = () => {
+  const { isPlaying, setIsPlaying, isMobile, setIsMobile } = useApp();
+
+  const handlePlay = () => {
+    if (!isPlaying) {
+      audio.volume = 0.1;
+      audio.play();
+    }
+    setIsPlaying(true);
+  };
+
+  const handleStop = () => {
+    if (isPlaying) {
+      audio.pause();
+      audio.currentTime = 0;
+    }
+    setIsPlaying(false);
+  };
+
+  const handlePause = () => {
+    if (isPlaying) {
+      audio.pause();
+    }
+    setIsPlaying(false);
+  };
+
+  //evento que escucha cuando el audio finaliza
+  audio.addEventListener("ended", () => {
+    setIsPlaying(false);
+  });
+
+  const handleResize = () => {
+    window.innerWidth < 576 ? setIsMobile(true) : setIsMobile(false);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+  });
+
+  return (
+    <div className={styles.container}>
+      <button className={styles.music_button} onClick={handlePlay}>
+        <img src={playButton} alt="playButton" />
+      </button>
+      <button className={styles.music_button} onClick={handleStop}>
+        <img src={stopButton} alt="stopButton" />
+      </button>
+      <button className={styles.music_button} onClick={handlePause}>
+        <img src={pauseButton} alt="pauseButton" />
+      </button>
+
+      <AnimatePresence>{isPlaying && <WaveSound />}</AnimatePresence>
+
+      <AnimatePresence>
+        {!isMobile && !isPlaying && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{
+              opacity: 1,
+              ease: "easeOut",
+              transition: { duration: 2, delay: 1.5 },
+            }}
+            exit={{
+              opacity: 0,
+              x: -100,
+              transition: { duration: 1.5 },
+            }}
+          >
+            <Typewriter
+              className={`${styles.textEffect}`}
+              options={{
+                strings: ["Lleva tú experiencia al límite."],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
+
+export default AudioPlayer;

@@ -1,0 +1,34 @@
+.toggle {
+  display: none;
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.hamburger div {
+  position: relative;
+  width: 2.5em;
+  height: 5px;
+  border-radius: 3px;
+  background-color: var(--secondary-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.middle,
+.bottom {
+  margin-top: 8px;
+}
+
+.toggle:checked + .hamburger .top {
+  transform: rotate(-45deg);
+  margin-top: 12px;
+}
+.toggle:checked + .hamburger .bottom {
+  opacity: 0;
+  transform: rotate(45deg);
+}
+.toggle:checked + .hamburger .middle {
+  transform: rotate(45deg);
+  margin-top: -5px;
+}

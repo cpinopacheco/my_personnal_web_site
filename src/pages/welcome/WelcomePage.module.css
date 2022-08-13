@@ -1,0 +1,53 @@
+.container {
+  align-items: center;
+  background-color: #111;
+  /*   background: radial-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../../assets/images/img_welcome.jpg); */
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 100vh;
+  padding: 2rem;
+  width: 100%;
+}
+
+.logo {
+  height: auto;
+  width: 100%;
+}
+
+@media (min-width: 480px) {
+  .logo {
+    max-width: 400px;
+  }
+}
+
+.welcome_text {
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .welcome_text {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  .welcome_text {
+    max-width: 50%;
+    font-size: 1.2rem;
+  }
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: #000;
+}
+
+.phrase {
+  text-align: center;
+  color: var(--secondary-color);
+}
