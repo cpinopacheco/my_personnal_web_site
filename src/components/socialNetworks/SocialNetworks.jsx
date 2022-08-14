@@ -7,7 +7,6 @@ const SocialNetworks = () => {
       <CardTiltEffect />
       <CardTiltEffect />
       <CardTiltEffect />
-      <CardTiltEffect />
     </div>
   );
 };

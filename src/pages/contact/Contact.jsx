@@ -1,6 +1,5 @@
 import styles from "./Contacto.module.css";
 import { motion } from "framer-motion";
-import SocialNetworks from "../../components/socialNetworks/SocialNetworks";
 
 const Contact = () => {
   return (
@@ -16,7 +15,6 @@ const Contact = () => {
     >
       <h2 className={styles.title}>Contacto</h2>
       <hr />
-      <SocialNetworks />
     </motion.div>
   );
 };

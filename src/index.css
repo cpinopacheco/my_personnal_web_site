@@ -14,6 +14,7 @@
   --tertiary-color: rgba(255, 255, 255, 0.6);
   --text-color: #fff;
   --border-radius: 0.8rem;
+  --title: 2.5rem;
 }
 
 body {
@@ -23,6 +24,7 @@ body {
   color: var(--text-color);
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
+  overflow-x: hidden;
 }
 
 hr {

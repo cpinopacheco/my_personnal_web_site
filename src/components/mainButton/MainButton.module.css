@@ -17,7 +17,7 @@
 @media (min-width: 576px) {
   .mainButton,
   .mainButton::after {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 

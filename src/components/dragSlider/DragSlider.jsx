@@ -1,7 +1,7 @@
-import styles from "./DragSlider.module.css";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import images from "../../components/dragSlider/images";
-import { useEffect, useRef, useState } from "react";
+import styles from "./DragSlider.module.css";
 
 const DragSlider = () => {
   const [width, setWidth] = useState(0);

@@ -1,6 +1,6 @@
 import styles from "./ProfesionalPage.module.css";
 import { motion } from "framer-motion";
-import SocialNetworks from "../../components/socialNetworks/SocialNetworks";
+import ProjectSection from "../../components/projectSection/ProjectSection";
 
 const ProfesionalPage = () => {
   return (
@@ -15,8 +15,9 @@ const ProfesionalPage = () => {
       }}
     >
       <h2 className={styles.title}>Profesional</h2>
-      {/* <hr />
-      <SocialNetworks /> */}
+      <hr />
+
+      <ProjectSection />
     </motion.div>
   );
 };
