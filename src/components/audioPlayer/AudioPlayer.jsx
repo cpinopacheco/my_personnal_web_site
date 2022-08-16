@@ -2,7 +2,7 @@ import playButton from "../../assets/images/play.svg";
 import stopButton from "../../assets/images/stop.svg";
 import pauseButton from "../../assets/images/pause.svg";
 import styles from "./AudioPlayer.module.css";
-import bgAudio from "../../assets/audio/daddy-yankee-ft-arcangel-pasion.mp3";
+import bgAudio from "../../assets/audio/bg_audio.mp3";
 import useApp from "../../hooks/useApp";
 import { AnimatePresence, motion } from "framer-motion";
 import WaveSound from "../waveSound/WaveSound";
@@ -16,7 +16,7 @@ const AudioPlayer = () => {
 
   const handlePlay = () => {
     if (!isPlaying) {
-      audio.volume = 0.1;
+      audio.volume = 0.5;
       audio.play();
     }
     setIsPlaying(true);
@@ -71,7 +71,7 @@ const AudioPlayer = () => {
             animate={{
               opacity: 1,
               ease: "easeOut",
-              transition: { duration: 2, delay: 1.5 },
+              transition: { duration: 2, delay: 1 },
             }}
             exit={{
               opacity: 0,

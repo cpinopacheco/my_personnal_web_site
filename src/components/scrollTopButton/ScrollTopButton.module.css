@@ -1,0 +1,22 @@
+.container_top_button {
+  align-items: center;
+  background-color: var(--secondary-color);
+  backdrop-filter: blur(1px);
+  border-radius: 50%;
+  bottom: 1.5rem;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-size: 2rem;
+  height: 64px;
+  justify-content: center;
+  position: fixed;
+  right: 1.5rem;
+  transition: all 0.3s ease;
+  width: 64px;
+  z-index: 1;
+}
+
+.container_top_button:hover {
+  box-shadow: 0 0 1rem var(--secondary-color);
+}

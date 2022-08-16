@@ -5,6 +5,7 @@ import image4 from "../assets/images/pokedex.png";
 import image5 from "../assets/images/sorteo_rifa.png";
 import image6 from "../assets/images/maquetacion_bootstrap.png";
 import image7 from "../assets/images/curriculum_digital.png";
+import image8 from "../assets/images/crud_pacientes.png";
 
 const imagesProjects = [
   {
@@ -48,6 +49,12 @@ const imagesProjects = [
     title: "Curriculum Digital",
     image: image7,
     url: "https://gifted-poincare-a5f38e.netlify.app"
+  },
+  {
+    id: 7,
+    title: "Crud Pacientes",
+    image: image8,
+    url: "https://magical-cupcake-3ddc2c.netlify.app"
   },
 ]
 
