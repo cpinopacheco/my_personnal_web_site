@@ -2,15 +2,13 @@
   margin: 0 auto;
 }
 
-@media (min-width: 1200px) {
-  .container {
-    width: 80%;
-  }
-}
-
 .title {
   font-size: var(--title);
   margin: 1.5rem 0;
   text-align: center;
   text-transform: uppercase;
+}
+
+.container_contact {
+  margin-top: 3rem;
 }

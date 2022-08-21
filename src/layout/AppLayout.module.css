@@ -1,9 +1,32 @@
+.container_main {
+  display: flex;
+  justify-content: center;
+}
+
 .main {
   margin: 1rem;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 576px) {
   .main {
     margin: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .main {
+    margin: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .main {
+    width: 65%;
   }
 }

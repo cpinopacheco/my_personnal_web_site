@@ -3,7 +3,6 @@ import styles from "./ProjectSection.module.css";
 import projects from "../../data/projects.js";
 
 const ProjectSection = () => {
-  console.log(projects);
   return (
     <>
       <h2 className={styles.title}>Mis Proyectos</h2>

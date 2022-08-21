@@ -19,6 +19,24 @@
   transition: all 0.6s ease-out;
 }
 
+@media (min-width: 576px) {
+  .tilt_box_wrap {
+    height: 350px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .tilt_box_wrap {
+    height: 320px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .tilt_box_wrap {
+    height: 350px;
+  }
+}
+
 @media (min-width: 992px) {
   .tilt_box_wrap:hover {
     cursor: pointer;
@@ -29,7 +47,6 @@
 
 .tilt_box {
   align-items: center;
-  /* background: #04527b; */
   border-radius: var(--border-radius);
   color: #fff;
   display: flex;

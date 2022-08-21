@@ -25,9 +25,11 @@ const AppLayout = () => {
 
       <Header />
       <NavBar />
-      <main className={styles.main}>
-        <Outlet />
-      </main>
+      <div className={styles.container_main}>
+        <main className={styles.main}>
+          <Outlet />
+        </main>
+      </div>
     </>
   );
 };

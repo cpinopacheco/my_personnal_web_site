@@ -4,12 +4,15 @@
   border-radius: var(--border-radius);
   margin: 2rem 0;
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1200px) {
   .container {
-    margin: 2rem 1rem;
-    padding: 2rem;
+    flex-direction: row;
+    align-items: center;
   }
 }
 
@@ -19,12 +22,6 @@
 }
 
 @media (min-width: 1200px) {
-  .flex {
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-  }
-
   .flex:nth-child(even) {
     flex-direction: row-reverse;
   }
@@ -36,21 +33,21 @@
 
 .image {
   border-radius: var(--border-radius);
+  display: block;
   height: auto;
-  margin-top: 2rem;
+  margin: 0 auto;
+  max-width: 640px;
   width: 100%;
 }
 
 @media (min-width: 1200px) {
   .image {
-    margin-top: 0;
-    width: 50%;
+    width: 40%;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1600px) {
   .image {
-    margin-top: 0;
-    width: 40%;
+    max-height: 350px;
   }
 }

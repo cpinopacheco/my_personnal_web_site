@@ -1,6 +1,8 @@
 import styles from "./ProfesionalPage.module.css";
 import { motion } from "framer-motion";
 import ProjectSection from "../../components/projectSection/ProjectSection";
+import { profesionalInformation } from "../../data/profesionalInformation";
+import ContainerSection from "../../components/containerSection/ContainerSection";
 
 const ProfesionalPage = () => {
   return (
@@ -16,7 +18,8 @@ const ProfesionalPage = () => {
     >
       <h2 className={styles.title}>Profesional</h2>
       <hr />
-
+      <ContainerSection obj={profesionalInformation} />
+      <hr />
       <ProjectSection />
     </motion.div>
   );

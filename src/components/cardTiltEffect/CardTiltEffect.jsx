@@ -1,9 +1,15 @@
 import styles from "./CardTiltEffect.module.css";
+import { motion } from "framer-motion";
 
 const CardTiltEffect = ({ title, image, url }) => {
-  console.log(url);
   return (
-    <div className={styles.container}>
+    <motion.div
+      className={styles.container}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1.5, delay: 0.5 }}
+    >
       <a href={url} target="_blank" title="Ver proyecto">
         <div className={styles.tilt_box_wrap}>
           <span className={styles.t_over}></span>
@@ -21,7 +27,7 @@ const CardTiltEffect = ({ title, image, url }) => {
           </div>
         </div>
       </a>
-    </div>
+    </motion.div>
   );
 };
 

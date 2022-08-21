@@ -21,6 +21,12 @@
   }
 }
 
+@media (min-width: 992px) {
+  .logo {
+    max-width: 300px;
+  }
+}
+
 .welcome_text {
   color: var(--secondary-color);
   text-align: center;
