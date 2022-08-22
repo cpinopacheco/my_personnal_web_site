@@ -7,8 +7,9 @@ const ContactInfo = () => {
     <motion.div
       className={styles.container_contactInfo}
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 0.8, duration: 2 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1 }}
     >
       {contactInfo.map((info) => (
         <a

@@ -8,7 +8,7 @@ const CardTiltEffect = ({ title, image, url }) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
-      transition={{ duration: 1.5, delay: 0.5 }}
+      transition={{ duration: 1 }}
     >
       <a href={url} target="_blank" title="Ver proyecto">
         <div className={styles.tilt_box_wrap}>

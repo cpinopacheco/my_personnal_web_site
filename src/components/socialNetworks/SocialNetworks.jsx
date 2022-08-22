@@ -6,8 +6,9 @@ const SocialNetworks = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 1.2, duration: 2 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1.5, delay: 1 }}
     >
       <h2 className={styles.title}>Redes Sociales</h2>
       <motion.div className={styles.container}>
