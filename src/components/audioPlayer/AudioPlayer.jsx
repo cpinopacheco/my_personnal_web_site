@@ -6,13 +6,12 @@ import bgAudio from "../../assets/audio/bg_audio.mp3";
 import useApp from "../../hooks/useApp";
 import { AnimatePresence, motion } from "framer-motion";
 import WaveSound from "../waveSound/WaveSound";
-import { useEffect } from "react";
 import Typewriter from "typewriter-effect";
 
 const audio = new Audio(bgAudio);
 
 const AudioPlayer = () => {
-  const { isPlaying, setIsPlaying, isMobile, setIsMobile } = useApp();
+  const { isPlaying, setIsPlaying } = useApp();
 
   const handlePlay = () => {
     if (!isPlaying) {
@@ -42,14 +41,6 @@ const AudioPlayer = () => {
     setIsPlaying(false);
   });
 
-  const handleResize = () => {
-    window.innerWidth < 576 ? setIsMobile(true) : setIsMobile(false);
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-  });
-
   return (
     <div className={styles.container}>
       <button className={styles.music_button} onClick={handlePlay}>
@@ -65,8 +56,9 @@ const AudioPlayer = () => {
       <AnimatePresence>{isPlaying && <WaveSound />}</AnimatePresence>
 
       <AnimatePresence>
-        {!isMobile && !isPlaying && (
+        {!isPlaying && (
           <motion.div
+            className={styles.container_textEffect}
             initial={{ opacity: 0 }}
             animate={{
               opacity: 1,

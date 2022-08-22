@@ -22,6 +22,16 @@
   transform: scale(1.15);
 }
 
+.container_textEffect {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .container_textEffect {
+    display: block;
+  }
+}
+
 .textEffect {
   margin-left: 2rem;
 }
