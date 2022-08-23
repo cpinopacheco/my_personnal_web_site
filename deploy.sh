@@ -1,34 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
- 
-
-
-
- 
-
-
-
-
 #!/usr/bin/env sh
 
 # abort on errors
@@ -53,5 +22,3 @@ git commit -m 'deploy'
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:cpinopacheco/my_personnal_web_site.git main:gh-pages
-
-cd -
