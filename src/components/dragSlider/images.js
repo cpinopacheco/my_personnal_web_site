@@ -5,4 +5,4 @@ import image4 from "../../assets/images/img_4.jpg";
 import image5 from "../../assets/images/img_5.jpg";
 
 
-export default [image2, image5, image4, image3, image1];
+export default [image2, image5, image3, image4, image1];

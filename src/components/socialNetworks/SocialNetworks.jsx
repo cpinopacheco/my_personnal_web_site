@@ -8,7 +8,7 @@ const SocialNetworks = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
-      transition={{ duration: 1.5, delay: 1 }}
+      transition={{ duration: 1.5, delay: 0.8 }}
     >
       <h2 className={styles.title}>Redes Sociales</h2>
       <motion.div className={styles.container}>

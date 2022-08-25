@@ -4,7 +4,7 @@ import Header from "../components/header/Header";
 import NavBar from "../components/navbar/NavBar";
 import ScrollTopButton from "../components/scrollTopButton/ScrollTopButton";
 import styles from "./AppLayout.module.css";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 const AppLayout = () => {
   const [viewportHeight, setViewportHeight] = useState(0);
@@ -25,11 +25,16 @@ const AppLayout = () => {
 
       <Header />
       <NavBar />
-      <div className={styles.container_main}>
+      <motion.div
+        className={styles.container_main}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2 }}
+      >
         <main className={styles.main}>
           <Outlet />
         </main>
-      </div>
+      </motion.div>
     </>
   );
 };

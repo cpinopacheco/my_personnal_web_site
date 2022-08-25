@@ -52,7 +52,7 @@
 
 .item img {
   border-radius: var(--border-radius);
-  filter: grayscale(40%);
+  filter: grayscale(30%);
   height: 100%;
   max-height: 600px;
   pointer-events: none;
