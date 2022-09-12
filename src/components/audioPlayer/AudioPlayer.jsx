@@ -74,7 +74,7 @@ const AudioPlayer = () => {
             <Typewriter
               className={`${styles.textEffect}`}
               options={{
-                strings: ["Lleva tú experiencia al límite."],
+                strings: ["Dale PLAY y lleva tú experiencia al límite!"],
                 autoStart: true,
                 loop: true,
               }}
