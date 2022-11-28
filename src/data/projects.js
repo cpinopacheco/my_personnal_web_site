@@ -6,6 +6,8 @@ import image5 from "../assets/images/sorteo_rifa.png";
 import image6 from "../assets/images/maquetacion_bootstrap.png";
 import image7 from "../assets/images/curriculum_digital.png";
 import image8 from "../assets/images/crud_pacientes.png";
+import image9 from "../assets/images/rick&morty.png";
+
 
 const imagesProjects = [
   {
@@ -55,6 +57,12 @@ const imagesProjects = [
     title: "Crud Pacientes",
     image: image8,
     url: "https://magical-cupcake-3ddc2c.netlify.app"
+  },
+  {
+    id: 9,
+    title: "Rick & Morty App",
+    image: image9,
+    url: "https://rickandmortyapplication.netlify.app/"
   },
 ]
 
