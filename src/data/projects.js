@@ -14,55 +14,55 @@ const imagesProjects = [
     id: 1,
     title: "Portafolio",
     image: image1,
-    url: "https://xenodochial-pare-811070.netlify.app"
+    url: "https://portafolio-profesional.netlify.app"
   },
   {
     id: 2,
     title: "Juegos Gratis",
     image: image2,
-    url: "https://soft-gumdrop-22d89e.netlify.app"
+    url: "https://juegos-gratis-app.netlify.app"
   },
   {
     id: 3,
     title: "Películas Populares",
     image: image3,
-    url: "https://naughty-saha-696ac2.netlify.app"
+    url: "https://peliculas-populares-app.netlify.app"
   },
   {
     id: 4,
     title: "Pokedex",
     image: image4,
-    url: "https://frosty-engelbart-ee91cf.netlify.app"
+    url: "https://my-app-pokedex-api.netlify.app"
   },
   {
     id: 5,
     title: "Sorteo Rifa",
     image: image5,
-    url: "https://thirsty-snyder-063d26.netlify.app"
+    url: "https://sorteo-rifa.netlify.app"
   },
   {
     id: 6,
     title: "Maquetación Bootstrap",
     image: image6,
-    url: "https://dazzling-arithmetic-5ea193.netlify.app"
+    url: "https://maquetacion-bootstrap.netlify.app"
   },
   {
     id: 7,
     title: "Curriculum Digital",
     image: image7,
-    url: "https://gifted-poincare-a5f38e.netlify.app"
+    url: "https://curriculum-digital.netlify.app"
   },
   {
     id: 8,
     title: "Crud Pacientes",
     image: image8,
-    url: "https://magical-cupcake-3ddc2c.netlify.app"
+    url: "https://crud-pacientes.netlify.app"
   },
   {
     id: 9,
     title: "Rick & Morty App",
     image: image9,
-    url: "https://rickandmortyapplication.netlify.app/"
+    url: "https://rickandmortyapplication.netlify.app"
   },
 ]
 

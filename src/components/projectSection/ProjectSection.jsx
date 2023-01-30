@@ -6,7 +6,7 @@ const ProjectSection = () => {
   return (
     <>
       <h2 className={styles.title}>Mis Proyectos</h2>
-      <section className={styles.container_proyect}>
+      <section className={styles.container_project}>
         {projects.map((project) => (
           <CardTiltEffect
             title={project.title}
